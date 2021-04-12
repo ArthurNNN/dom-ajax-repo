@@ -1,13 +1,13 @@
 {
   "title": "Resume",
-  "name": "startbootstrap-resume",
+  "name": "gulp-v4",
   "version": "4.0.0",
   "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
   "homepage": "https://startbootstrap.com/template-overviews/resume",
   "license": "MIT",
   "author": "Start Bootstrap",
   "dependencies": {
-    "bootstrap": "4.0.0",
+    "bootstrap": "^4.6.0",
     "devicons": "^1.8.0",
     "jquery": "^3.4.1",
     "simple-line-icons": "^2.4.1"
@@ -27,5 +27,13 @@
     "husky": "^0.14.3",
     "prettier": "^1.14.2",
     "pretty-quick": "^1.6.0"
+  },
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArthurNNN/dom-ajax-repo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArthurNNN/dom-ajax-repo/issues"
   }
 }
