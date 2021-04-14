@@ -92,18 +92,27 @@
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
           <h1 class="mb-0">
-            My
+            The
             <span class="text-primary">Pull Requests</span>
           </h1>
 
-          <p class="mb-5">Show your list of PRs in this page</p>
+          <p class="mb-5">
+            Show a list of PRs in
+            <a href="https://github.com/CodeYourFuture/js-exercises"
+              >CodeYourFuture/js-exercises</a
+            >
+            page
+          </p>
+          <div>
+            Filters PRs by Github username: <input id="userName" type="text" />
+          </div>
           <ul
             id="pull-requests-list"
             class="list-inline list-social-icons mb-0"
           >
-            <li>
-              Your list of PRs should appear here
-            </li>
+            <!-- <li>
+            Your list of PRs should appear here
+          </li> -->
           </ul>
         </div>
       </section>
@@ -119,5 +128,6 @@
     <!-- Custom scripts for this template -->
     <script src="../js/resume.min.js"></script>
     <!-- Link to the pull-requests.js file here -->
+    <script src="../js/pull-requests.js"></script>
   </body>
 </html>
