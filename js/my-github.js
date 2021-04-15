@@ -5,6 +5,10 @@ const getRepos = function(repoName) {
     .then(data => data.json())
     .then(function(response) {
       var ul = document.querySelector("#repos-list");
+      // clear list of repos
+      while (ul.firstChild) {
+        ul.removeChild(ul.firstChild);
+      }
       return response.map(function(rep) {
         console.log(rep.name);
         var li = document.createElement("li");
@@ -30,6 +34,16 @@ const getNRepos = function(repoName) {
     });
 };
 
+function getReposOfUsername() {
+  document.getElementById("search").addEventListener("click", () => {
+    var userName = document.querySelector("#userName").value.trim();
+    console.log(userName);
+    getRepos(userName);
+  });
+  // return userName;
+}
+
 getRepos("ArthurNNN");
 getNRepos("ArthurNNN");
+getReposOfUsername();
 console.log("Loading...");
